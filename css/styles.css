@@ -228,7 +228,6 @@ body {
    margin-left: auto;
    margin-right: auto;
    background: var(--main-font-color);
-   outline: 1px solid tomato;
    background-image: linear-gradient(to right, 
    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
    url('../images/people-office.jpg');
@@ -418,6 +417,7 @@ body {
    justify-content: center;
    gap: 24px;
    margin-bottom: 72px;
+   padding-top: 96px;
 }
 
 .button-filter {
