@@ -53,6 +53,7 @@ img {
    --contact-item-color: #434455;
    --logo-light-color: #F4F4FD;
    --corner-color: #E7E9FC;
+   --icon-rect: #8E8F99;
 }
 
 body {
@@ -268,9 +269,36 @@ body {
 
 /**
   |============================
-  | Advantages Section
+  | ADVANTAGES Section
   |============================
 */
+
+.advantage::before {
+   display: block;
+   content: '';
+   height: 112px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 4px;
+   /* background-color: #E5E5E5; */
+}
+
+.icon-antenna::before {
+      background-image: url('../images/icon1.svg');
+}
+
+.icon-clock::before {
+      background-image: url('../images/icon2.svg');
+}
+
+.icon-diagram::before {
+      background-image: url('../images/icon3.svg');
+}
+
+.icon-astronaut::before {
+      background-image: url('../images/icon4.svg');
+}
 
 .advantages {
    padding-top: 120px;
@@ -293,6 +321,7 @@ body {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
+   margin-top: 8px;
    margin-bottom: 8px;
 }
 
@@ -304,7 +333,7 @@ body {
 
 /**
   |============================
-  | Professionals Section
+  | PROFESSIONALS Section
   |============================
 */
 
@@ -349,7 +378,7 @@ body {
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--contact-item-color);
-   margin: 0;
+   margin-bottom: 8px;
 }
 
 .prof-item {
@@ -361,13 +390,47 @@ body {
 .info {
    padding-top: 32px;
    padding-bottom: 32px;
-
 }
 
+.social {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   gap: 24px;
+   width: 232px;
+   height: 40px;
+}
+
+.social-instagram {
+   width: 40px;
+   height: 40px;
+   background-image: url('../images/ellipse1.svg');
+}
+
+.social-twitter {
+   width: 40px;
+   height: 40px;
+   background-image: url('../images/ellipse2.svg');
+}
+
+.social-facebook {
+   width: 40px;
+   height: 40px;
+   background-image: url('../images/ellipse3.svg');
+}
+
+.social-linledin {
+   width: 40px;
+   height: 40px;
+   background-image: url('../images/ellipse4.svg');
+}
 
 /**
   |============================
-  | BUTTONS
+  | BUTTONS Section
   |============================
 */
 
@@ -408,7 +471,7 @@ body {
 
 /**
   |============================
-  | Filters Style
+  | FILTERS Style
   |============================
 */
 
@@ -428,7 +491,7 @@ body {
 
 /**
   |============================
-  | Examples Styles
+  | EXAMPLES Style
   |============================
 */
 
@@ -470,3 +533,72 @@ body {
    border-left: 1px solid var(--corner-color);
    border-bottom: 1px solid var(--corner-color);
 }
+
+/**
+  |============================
+  | CUSTOMERS Style
+  |============================
+*/
+
+.customers {
+   padding: 225px 0;
+}
+.label {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   text-align: center;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   margin-bottom: 72px;
+   color: var(--main-font-color);
+}
+
+.customers-overlay {
+   display: flex;
+   width: 168px;
+   height: 88px;
+   outline: 1px solid var(--icon-rect);
+   border-radius: 4px;
+}
+
+.customers-section {
+   display: block;
+   content: '';
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.customer-item {
+   width: 104px;
+   height: 56px;
+}
+
+.item1 {
+   background-image: url('../images/customer1.svg');
+}
+
+.item2 {
+   background-image: url('../images/customer2.svg');
+}
+
+.item3 {
+   background-image: url('../images/customer3.svg');
+}
+
+.item4 {
+   background-image: url('../images/customer4.svg');
+}
+
+.item5 {
+   background-image: url('../images/customer5.svg');
+}
+
+.item6 {
+   background-image: url('../images/customer6.svg');
+}
+
