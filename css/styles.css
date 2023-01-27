@@ -192,6 +192,55 @@ body {
    margin-top: 16px;
 }
 
+
+.footer-container {
+   display: flex;
+   gap: 120px;
+}
+
+.footer-link-text {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   margin-bottom: 16px;
+   color: var(--main-background-color);
+}
+
+.footer-items {
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   gap: 24px;
+   height: 40px;
+}
+
+.footer-box {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.icon-instagram {
+   background-image: url('../images/footer-instagram.svg');
+}
+
+.icon-twitter {
+   background-image: url('../images/footer-twitter.svg');
+}
+
+.icon-facebook {
+   background-image: url('../images/footer-facebook.svg');
+}
+
+.icon-linledin {
+   background-image: url('../images/footer-linkedin.svg');
+}
+
+
 /**
   |============================
   | HERO Section
@@ -273,31 +322,34 @@ body {
   |============================
 */
 
-.advantage::before {
-   display: block;
-   content: '';
+.icon-section {
+   display: flex;
+   width: 264px;
    height: 112px;
-   background-size: contain;
-   background-repeat: no-repeat;
+}
+
+.icon-box {
+   display: inline-block;
    background-position: center;
+   background-repeat: no-repeat;
+   outline: 1px solid var(--icon-rect);
    border-radius: 4px;
-   /* background-color: #E5E5E5; */
 }
 
-.icon-antenna::before {
-      background-image: url('../images/icon1.svg');
+.antenna {
+   background-image: url('../images/antenna.svg');
 }
 
-.icon-clock::before {
-      background-image: url('../images/icon2.svg');
+.clock {
+   background-image: url('../images/clock.svg');
 }
 
-.icon-diagram::before {
-      background-image: url('../images/icon3.svg');
+.diagram {
+   background-image: url('../images/diagram.svg');
 }
 
-.icon-astronaut::before {
-      background-image: url('../images/icon4.svg');
+.astronaut {
+   background-image: url('../images/astronaut.svg');
 }
 
 .advantages {
@@ -556,26 +608,21 @@ body {
 
 .customers-overlay {
    display: flex;
-   width: 168px;
    height: 88px;
-   outline: 1px solid var(--icon-rect);
-   border-radius: 4px;
-}
-
-.customers-section {
-   display: block;
-   content: '';
-   display: flex;
    gap: 24px;
    justify-content: center;
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
+   align-items: center;
 }
 
 .customer-item {
-   width: 104px;
-   height: 56px;
+   width: 168px;
+   height: 88px;
+   
+   display: inline-block;
+   background-position: center;
+   background-repeat: no-repeat;
+   outline: 1px solid var(--icon-rect);
+   border-radius: 4px;
 }
 
 .item1 {
