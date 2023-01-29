@@ -577,27 +577,7 @@ body {
 .examples-list {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 72px;
-}
-
-.example-1:hover,
-.example-1:focus,
-.example-2:hover,
-.example-2:focus,
-.example-3:hover,
-.example-3:focus,
-.example-4:hover,
-.example-4:focus,
-.example-5:hover,
-.example-5:focus,
-.example-6:hover,
-.example-6:focus,
-.example-7:hover,
-.example-7:focus,
-.example-8:hover,
-.example-8:focus,
-.example-9:hover {
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+   margin-bottom: 48px;
 }
 
 .examples-list:nth-child(3) {
@@ -606,6 +586,16 @@ body {
 
 .example-item {
    gap: 24px; 
+}
+
+.example-link {
+   text-decoration: none;
+   display: block;
+}
+
+.example-link:hover,
+.example-link:focus {
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .titles {
@@ -710,5 +700,7 @@ body {
 .item5:focus,
 .item6:hover,
 .item6:focus {
+   border: 1px solid var(--accent-color);
+   border-radius: 4px;
    background-color: var(--accent-color);
 }
